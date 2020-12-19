@@ -93,14 +93,14 @@
     </el-header>
     <el-container>
       <!-- 侧边栏 -->
-      <el-aside :width="isCollapse ? '64px' : '200px'">
+      <el-aside>
         <el-menu
-          background-color="#333744"
-          text-color="#fff"
+          background-color="#ffebe5"
+          text-color="#000000"
           active-text-color="#409EFF"
           unique-opened
           :collapse="isCollapse"
-          :collapse-transition="false"
+          :collapse-transition="true"
           router
           :default-active="activePath"
         >
@@ -173,7 +173,7 @@ export default {
           children: [],
         },
       ],
-      circleUrl: "/img/logo1.61b05148.png", // 该属性暂没调试通过
+      headSculpture:"../assets/headSculpture.jpg", // // 该属性暂没调试通过
       ifAutoplay: true,
       // 是否折叠
       isCollapse: false,
